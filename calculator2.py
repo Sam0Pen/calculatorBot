@@ -47,6 +47,14 @@ async def open(ctx, a: str):
         z = z + int(res)
     await ctx.send(z)
 
+#command to delete one day
+@bot.command()
+async def delete(ctx, a: str):
+    sql = "DELETE FROM OUTCOME WHERE date = ?"
+    cursor.execute(sql, [(a)])
+    conn.commit()
+    await ctx.send("Day is deleted")
+
 #command to see what day it is
 @bot.command()
 async def date(ctx):
