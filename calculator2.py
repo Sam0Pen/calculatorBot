@@ -12,7 +12,7 @@ cursor = conn.cursor()
 today = date.today()
 d1 = today.strftime("%d/%m/%Y")
 
-TOKEN = "NzA0NjM5NjUyMTA3Mzg2OTAx.XqgFQQ.pWtA5rKQWvmP7MbGpHgdYP5SMPg"
+TOKEN = ""
 
 bot = commands.Bot(command_prefix='!', description='Wacky bot.')
 
@@ -77,6 +77,8 @@ async def help(ctx):
     embed = discord.Embed(title="Calculator", description="List of wacky commands are:", color=0xeee657)
 
     embed.add_field(name="!date", value="Gives todays date", inline=False)
+    embed.add_field(name="!insert X", value="Saves new outcome for this day", inline=False)
+    embed.add_field(name="!open xx/xx/xxxx", value="Shows the sum of that specific day", inline=False)
     embed.add_field(name="!add X Y", value="Gives the addition of **X** and **Y**", inline=False)
     embed.add_field(name="!multiply X Y", value="Gives the multiplication of **X** and **Y**", inline=False)
     embed.add_field(name="!division X Y", value="Gives the division of **X** and **Y**", inline=False)
