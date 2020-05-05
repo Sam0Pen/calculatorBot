@@ -87,6 +87,7 @@ async def help(ctx):
     embed.add_field(name="!date", value="Gives todays date", inline=False)
     embed.add_field(name="!insert X", value="Saves new outcome for this day", inline=False)
     embed.add_field(name="!open xx/xx/xxxx", value="Shows the sum of that specific day", inline=False)
+    embed.add_field(name="!delete xx/xx/xxxx", value="Delete outcomes of specific day", inline=False)
     embed.add_field(name="!add X Y", value="Gives the addition of **X** and **Y**", inline=False)
     embed.add_field(name="!multiply X Y", value="Gives the multiplication of **X** and **Y**", inline=False)
     embed.add_field(name="!division X Y", value="Gives the division of **X** and **Y**", inline=False)
