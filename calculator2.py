@@ -1,4 +1,3 @@
-import random
 import discord
 from discord.ext import commands
 from datetime import date
@@ -12,7 +11,7 @@ cursor = conn.cursor()
 today = date.today()
 d1 = today.strftime("%d/%m/%Y")
 
-TOKEN = ""
+TOKEN = "NzA0NjM5NjUyMTA3Mzg2OTAx.XrElTg.e2E2-mqQyjiM6QjBKhFu-MlVD3Y"
 
 bot = commands.Bot(command_prefix='!', description='Wacky bot.')
 
